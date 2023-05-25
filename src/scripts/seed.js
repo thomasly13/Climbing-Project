@@ -1,6 +1,5 @@
 
 
-
 const climb1 = new BoulderSpots('Putah Creek Boulders', 'North Bay', 'V1', ['38.516889, -122.055472'], 'Roadside Boulder');
 const climb2 = new BoulderSpots('Putah Creek Boulders', 'North Bay', 'V2', ['38.516889, -122.055472'], 'Roadside Boulder');
 const climb3 = new BoulderSpots('Putah Creek Boulders', 'North Bay', 'V2', ['38.516889, -122.055472'], 'Roadside Boulder');
@@ -50,6 +49,22 @@ const climb37 = new BoulderSpots('Castle Rock Boulders','South Bay', 'V4', ['37.
 const climb38 = new BoulderSpots('Castle Rock Boulders','South Bay', 'V5', ['37.229296, -122.095641'], 'Main Area - Back Side');
 const climb39 = new BoulderSpots('Castle Rock Boulders','South Bay', 'V5', ['37.229296, -122.095641'], 'Main Area - Back Side');
 const climb40 = new BoulderSpots('Castle Rock Boulders','South Bay', 'V1', ['37.229296, -122.095641'], 'Main Area - Back Side');
+
+
+const climb41 = new BoulderSpots('Sunol','East Bay', 'V7', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb42= new BoulderSpots('Sunol','East Bay', 'V8', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb43 = new BoulderSpots('Sunol','East Bay', 'V1', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb44 = new BoulderSpots('Sunol','East Bay', 'V2', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb45 = new BoulderSpots('Sunol','East Bay', 'V0', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb46 = new BoulderSpots('Sunol','East Bay', 'V4', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb47 = new BoulderSpots('Sunol','East Bay', 'V3', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb48 = new BoulderSpots('Sunol','East Bay', 'V3', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb49 = new BoulderSpots('Sunol','East Bay', 'V4', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb50 = new BoulderSpots('Sunol','East Bay', 'V3', ['37.524972, -121.817806'], 'Indian Joe Caves');
+const climb51 = new BoulderSpots('Sunol','East Bay', 'V6', ['37.524972, -121.817806'], 'Indian Joe Caves');
+
+
+
 
 
 

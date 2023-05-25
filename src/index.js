@@ -23,9 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     marker1.addListener("click", () => {
       detailWindow1.open(map, marker1)
     });
-
-
-
   }
 
 window.initMap = initMap();
