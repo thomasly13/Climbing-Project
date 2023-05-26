@@ -1,10 +1,10 @@
 
-
 class BoulderSpots{
 
     static allSpots = [];
 
-    constructor(park, location, difficulty, coordinates, name){
+    constructor(id, park, location, difficulty, coordinates, name){
+        this.id = id;
         this.park = park;
         this.location = location;
         this.difficulty = difficulty;
@@ -14,12 +14,11 @@ class BoulderSpots{
     };
 
     static renderSpots = function (){
-        console.log(BoulderSpots.allSpots);
+        console.log(BoulderSpots.allSpots); 
     };
 
-  };
+};
+
+export default BoulderSpots;
 
 
-
-
-  
