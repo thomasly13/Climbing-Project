@@ -1,11 +1,17 @@
 import BoulderSpots from "../scripts/bouldering";
 
 export async function loadMap() {
-    let map;
 
+    //create map variable
+    let map;    
+
+
+    //create and initilize the map
     async function initMap() {
 
-    const { Map } = await google.maps.importLibrary("maps");
+        //importing google api
+        const { Map } = await google.maps.importLibrary("maps");
+
         map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: 37.773972, lng: 	-122.431297 },
             zoom: 8,
@@ -13,11 +19,15 @@ export async function loadMap() {
     };
 
     await initMap();
+
+
+
     let counter = new Map();
+  
     let parks = []
+
     for (let i = 1; i < BoulderSpots.allSpots.length; i++) {
         let climb = BoulderSpots.allSpots[i];
-        console.log(climb.difficulty)
         
         if (counter.get(climb.park) !== undefined) {
             let diff = counter.get(climb.park);
@@ -28,15 +38,33 @@ export async function loadMap() {
         };
 
         if (!parks.includes(climb.park)) parks.push(climb.park);
-
-        for (let i = 0; i < parks.length; i++) {
-            _addMarker(map, parks[i], counter.get(parks[i])[0], counter.get(parks[i]).slice(1));
-            
-        }
-        
-
     };
 
+    for (let i = 0; i < parks.length; i++) { 
+        let description = ''
+        let difficulties = new Map();
+        let park = counter.get(parks[i]);
+        for (let j = 1; j < park.length; j++) {
+            if (difficulties.get(park[j]) === undefined) {
+                difficulties.set(park[j], 1)
+            } else {
+                let count = difficulties.get(park[j]);
+                count += 1;
+                difficulties.set(park[j], count);
+            };
+        };
+        for (const x of difficulties.entries()) {
+            if (x[1] === 1){
+                description += `${x[0]}: ${x[1]} Problem <br>`;
+            } else {
+                description += `${x[0]}: ${x[1]} Problems <br>`;
+            }
+            
+        };
+
+        _addMarker(map, parks[i], counter.get(parks[i])[0], description);
+
+    };
 
 };
 
@@ -59,14 +87,12 @@ function _addMarker(map, name, location, difficulties) {
         detailWindow.open(map, marker)
     });
 
-    marker.addListener("mouseover", () => {
-        detailWindow.open(map, marker)
-    });
-    marker.addListener("mouseout", () => {
-        detailWindow.close(map, marker)
-    });
-
+    // marker.addListener("mouseover", () => {
+    //     detailWindow.open(map, marker)
+    // });
+    // marker.addListener("mouseout", () => {
+    //     detailWindow.close(map, marker)
+    // });
     
 };
-
 
