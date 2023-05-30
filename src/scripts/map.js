@@ -111,7 +111,7 @@ export async function loadMap() {
  
             if (className === 'areas') {
                 for (let i = 0; i < north.length; i++) {
-                    north[i].setAnimation(google.maps.Animation.BOUNCE)
+                    north[i].setAnimation(google.maps.Animation.DROP)
                     north[i].setMap(map)
                 };
             } else {
@@ -128,7 +128,7 @@ export async function loadMap() {
  
             if (className === 'areas') {
                 for (let i = 0; i < east.length; i++) {
-                    east[i].setAnimation(google.maps.Animation.BOUNCE)
+                    east[i].setAnimation(google.maps.Animation.DROP)
                     east[i].setMap(map)
                 };
             } else {
@@ -144,7 +144,7 @@ export async function loadMap() {
  
             if (className === 'areas') {
                 for (let i = 0; i < south.length; i++) {
-                    south[i].setAnimation(google.maps.Animation.BOUNCE)
+                    south[i].setAnimation(google.maps.Animation.DROP)
                     south[i].setMap(map)
                 };
             } else {
@@ -160,7 +160,7 @@ export async function loadMap() {
  
             if (className === 'areas') {
                 for (let i = 0; i < west.length; i++) {
-                    west[i].setAnimation(google.maps.Animation.BOUNCE)
+                    west[i].setAnimation(google.maps.Animation.DROP)
                     west[i].setMap(map)
                 };
             } else {
