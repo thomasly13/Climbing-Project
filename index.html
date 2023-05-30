@@ -24,58 +24,71 @@
   </head>
 
   <body>
-    <h1 class="title">Bay Area Boulders</h1>
+    <div class="first-page">
+      <h1 class="title">Bay Area Boulders</h1>
 
-    <div class="introduction">
+      <div class="introduction">
 
-      <img src="./src/images/17722332020_c77d47c452_o.jpg" width="800px" height="533px">      
-      <div class="introduction-paragraph">
+      
         <p>Although known for it's city life, a common hobby picked up by many in the bay area, is climbing! To the right, is a photo of a popular climbing spot, just north of San Francisco, called Ring Mountain! Click the arrow below to see the graph and map of all of the bouldering problems in the bay area. Feel free to toggle by location or difficulty!</p>
-      </div>
-    </div>
-
-    <div>
-      <a class="scroll-button"href="#myChart"><i class="fa-solid fa-arrow-down fa-bounce"></i></a>
-    </div>
-    
-    
 
 
-    <h2 class="toggle-title">Select your Toggles!</h2>
-
-    <div class="information">
-      <div class="areas-container"> 
-        <p class="areas">North Bay</p>
-        <p class="areas">East Bay</p>
-        <p class="areas">South Bay</p>
-        <p class="areas">West Bay</p>
+        <img src="./src/images/17722332020_c77d47c452_o.jpg"> 
       </div>
 
-      <canvas id="myChart" style="width:100%;max-width:900px;height:220px;" ></canvas>
-
-
-      <div class="difficulties-container"> 
-        <p class="difficulties">V0</p>
-        <p class="difficulties">V1</p>
-        <p class="difficulties">V2</p>
-        <p class="difficulties">V3</p>
-        <p class="difficulties">V4</p>
-        <p class="difficulties">V5</p>
-        <p class="difficulties">V6</p>
-        <p class="difficulties">V7</p>
-        <p class="difficulties">V8</p>
-        <p class="difficulties">V9</p>
-        <p class="difficulties">V10</p>
+      <div>
+        <a class="scroll-button"href="#myChart"><i class="fa-solid fa-arrow-down fa-bounce"></i></a>
       </div>
 
     </div>
 
 
 
+    <div class="second-page">
+      <h2 class="toggle-title">Select your Toggles!</h2>
+
+      <div class="second-page-information">
+          <div class="information">
+            <div class="areas-container"> 
+              <button class="areas" id="north-button">North Bay</button>
+              <button class="areas" id="east-button">East Bay</button>
+              <button class="areas" id="south-button">South Bay</button>
+              <button class="areas" id="west-button">West Bay</button>
+            </div>
+
+            <canvas id="myChart" ></canvas>
 
 
-    <div id="map"></div>
+            <div class="difficulties-container"> 
+              <button class="difficulties">V0</button>
+              <button class="difficulties">V1</button>
+              <button class="difficulties">V2</button>
+              <button class="difficulties">V3</button>
+              <button class="difficulties">V4</button>
+              <button class="difficulties">V5</button>
+              <button class="difficulties">V6</button>
+              <button class="difficulties">V7</button>
+              <button class="difficulties">V8</button>
+              <button class="difficulties">V9</button>
+              <button class="difficulties">V10</button>
+            </div>
+
+            <p class="difficulties-text">(easy--------difficulties--------hardest)</p>
+
+          </div>
+
+          <div id="map"></div>
+      </div>
+
+      
+    </div>
+
+
+
     
+    
+
+
 
   </body>
 

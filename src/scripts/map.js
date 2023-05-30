@@ -18,17 +18,22 @@ export async function loadMap() {
         });
     };
 
+    // initialize the map
     await initMap();
 
 
-
+    
+    //created container for difficulties in a park
     let counter = new Map();
-  
+
+    //each individual park
     let parks = []
 
     for (let i = 1; i < BoulderSpots.allSpots.length; i++) {
+        // iterated through all of the climbs
         let climb = BoulderSpots.allSpots[i];
         
+        // adds climb coordinated and difficulty to my counter hash
         if (counter.get(climb.park) !== undefined) {
             let diff = counter.get(climb.park);
             diff.push(climb.difficulty);
@@ -37,32 +42,136 @@ export async function loadMap() {
             counter.set(climb.park, [climb.coordinates, climb.difficulty])
         };
 
-        if (!parks.includes(climb.park)) parks.push(climb.park);
+
+        //adds parks to the parks array
+        if (!parks.includes(climb.park)) parks.push([climb.park, climb.location]);
     };
 
+    //iterated through each park
     for (let i = 0; i < parks.length; i++) { 
+
+        //create a descriptiong for each marker
         let description = ''
+        
+        //hash of the difficulty count of each location
         let difficulties = new Map();
-        let park = counter.get(parks[i]);
-        for (let j = 1; j < park.length; j++) {
-            if (difficulties.get(park[j]) === undefined) {
-                difficulties.set(park[j], 1)
+
+
+        //each individual climbing locatin
+        let climb = counter.get(parks[i][0]);
+
+        for (let j = 1; j < climb.length; j++) {
+            // counts the difficulties and add it to the hash
+            if (difficulties.get(climb[j]) === undefined) {
+                difficulties.set(climb[j], 1)
             } else {
-                let count = difficulties.get(park[j]);
+                let count = difficulties.get(climb[j]);
                 count += 1;
-                difficulties.set(park[j], count);
+                difficulties.set(climb[j], count);
             };
         };
+
         for (const x of difficulties.entries()) {
+            //creates the description
             if (x[1] === 1){
                 description += `${x[0]}: ${x[1]} Problem <br>`;
             } else {
                 description += `${x[0]}: ${x[1]} Problems <br>`;
-            }
+            };
             
         };
 
-        _addMarker(map, parks[i], counter.get(parks[i])[0], description);
+        let marker = _addMarker(map, parks[i][0], counter.get(parks[i][0])[0], description);
+
+        let north = [];
+        let east= [];
+        let south = [];
+        let west = [];
+
+        if (parks[i][1] === 'North Bay') {
+            north.push(marker);
+        } else if (parks[i][1] === 'East Bay') {
+            east.push(marker);
+        } else if (parks[i][1] === 'South Bay') {
+            south.push(marker); 
+        } else if (parks[i][1] === 'West Bay') {
+            west.push(marker)
+        };
+
+        let northButton = document.getElementById("north-button")
+        let eastButton = document.getElementById("east-button")
+        let southButton = document.getElementById("south-button")
+        let westButton = document.getElementById("west-button")
+
+
+
+
+        northButton.addEventListener("click", (e) => {
+            let className = e.target.classList['value'];
+ 
+            if (className === 'areas') {
+                for (let i = 0; i < north.length; i++) {
+                    north[i].setAnimation(google.maps.Animation.BOUNCE)
+                    north[i].setMap(map)
+                };
+            } else {
+                for (let i = 0; i < north.length; i++) {
+                    north[i].setMap(null)
+                };
+            };
+    
+        });
+
+        eastButton.addEventListener("click", (e) => {
+  
+            let className = e.target.classList['value'];
+ 
+            if (className === 'areas') {
+                for (let i = 0; i < east.length; i++) {
+                    east[i].setAnimation(google.maps.Animation.BOUNCE)
+                    east[i].setMap(map)
+                };
+            } else {
+                for (let i = 0; i < east.length; i++) {
+                    east[i].setMap(null)
+                };
+            };
+    
+        } );
+
+        southButton.addEventListener("click", (e) => {
+            let className = e.target.classList['value'];
+ 
+            if (className === 'areas') {
+                for (let i = 0; i < south.length; i++) {
+                    south[i].setAnimation(google.maps.Animation.BOUNCE)
+                    south[i].setMap(map)
+                };
+            } else {
+                for (let i = 0; i < south.length; i++) {
+                    south[i].setMap(null)
+                };
+            };
+    
+        } );
+
+        westButton.addEventListener("click", (e) => {
+            let className = e.target.classList['value'];
+ 
+            if (className === 'areas') {
+                for (let i = 0; i < west.length; i++) {
+                    west[i].setAnimation(google.maps.Animation.BOUNCE)
+                    west[i].setMap(map)
+                };
+            } else {
+                for (let i = 0; i < west.length; i++) {
+                    west[i].setMap(null)
+                };
+            };
+    
+        } );
+
+        
 
     };
 
@@ -76,7 +185,8 @@ function _addMarker(map, name, location, difficulties) {
     position: {lat: lat, lng: lng },
     map: map,
     title: `${name}`,
-    icon:'https://img.icons8.com/?size=50&id=58mu148U0fsj&format=png' 
+    icon:'https://img.icons8.com/?size=50&id=58mu148U0fsj&format=png',
+    animation: google.maps.Animation.DROP
     });
     
     const detailWindow = new google.maps.InfoWindow({
@@ -97,6 +207,9 @@ function _addMarker(map, name, location, difficulties) {
     // marker.addListener("mouseout", () => {
     //     detailWindow.close(map, marker)
     // });
+
+    return marker
     
 };
+
 
