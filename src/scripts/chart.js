@@ -7,69 +7,63 @@ export function loadOriginalChart() {
         datasets: [{
             label: 'V0',
             data: [],
-            backgroundColor: ["red"],
+            backgroundColor: ['rgba(103, 138, 202, 1)'],
             borderWidth: 1          
         },{
             label: 'V1',
             data: [],
-            backgroundColor: ["red"],
+            backgroundColor: ['rgba(191, 214, 228, 1)'],
             borderWidth: 1          
         }, {
             label: 'V2',
             data: [],
-            backgroundColor: ["orange"],
+            backgroundColor: ['rgba(240, 165, 27, 1)'],
             borderWidth: 1          
         }, {
             label: 'V3',
             data: [],
-            backgroundColor: ["blue"],
+            backgroundColor: ['rgba(233, 194, 121, 1)'],
             borderWidth: 1          
         }, {
             label: 'V4',
             data: [],
-            backgroundColor: ["green"],
+            backgroundColor: ['rgba(24, 131, 24, 1)'],
             borderWidth: 1          
         },{
             label: 'V5',
             data: [],
-            backgroundColor: ["red"],
+            backgroundColor: ['rgba(151, 230, 151, 1)'],
             borderWidth: 1          
         },{
             label: 'V6',
             data: [],
-            backgroundColor: ["red"],
+            backgroundColor: ['rgba(204, 8, 8, 1)'],
             borderWidth: 1          
         }, {
             label: 'V7',
             data: [],
-            backgroundColor: ["red"],
+            backgroundColor: ['rgba(248, 139, 139, 1)'],
             borderWidth: 1          
         }, {
             label: 'V8',
             data: [],
-            backgroundColor: ["red"],
+            backgroundColor: ['rgba(153, 77, 153, 1)'],
             borderWidth: 1          
         }, {
             label: 'V9',
             data: [],
-            backgroundColor: ["red"],
+            backgroundColor: ['rgba(223, 165, 223, 1)'],
             borderWidth: 1          
         }, {
             label: 'V10',
             data: [],
-            backgroundColor: ["red"],
+            backgroundColor: ['rgba(255, 194, 204, 1)'],
             borderWidth: 1          
-        },{
-            label: 'V11',
-            data: [],
-            backgroundColor: ["red"],
-            borderWidth: 1          
-        },]
+        }]
         
     };
 
     const config = {
-        animmationEnabled: true,
         type: 'bar',
         data: data,
         options: {
@@ -87,8 +81,8 @@ export function loadOriginalChart() {
 
 
     let points = _calculateData();
-    let data_diff = config['data']
-    let data_datasets = data_diff['datasets']
+    let data_diff = config['data'];
+    let data_datasets = data_diff['datasets'];
 
     for (const x of data_datasets.entries()) {
         let diff = x[1]
@@ -96,14 +90,12 @@ export function loadOriginalChart() {
             if (points[i].get(diff['label']) !== undefined) {
                 diff['data'].push(points[i].get(diff['label']))
             } else {
-                diff['data'].push(0)
+                diff['data'].push(0);
             };
         };
     };
 
 
-
-    console.log(data_diff['datasets'])
 
 
 

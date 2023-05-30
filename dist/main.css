@@ -7,19 +7,24 @@
   border-radius: 5%;
   border: 1px solid black;
   position: absolute;
-  left: 1400px;
-  bottom: 230px;
+  left: 1375px;
+  bottom: -730px;
 }
 
 .cool-text {
   color: red;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  overflow: hidden;
-  display: block;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: rgb(245, 230, 210);
-  height: 10%;
 }
 
 .off {
@@ -33,6 +38,7 @@ body {
   font-size: 50px;
   justify-content: space-evenly;
   font-family: "Indie Flower", cursive;
+  margin-bottom: 20px;
 }
 
 .areas-container .areas {
@@ -46,6 +52,8 @@ body {
   font-size: 50px;
   justify-content: space-evenly;
   font-family: "Indie Flower", cursive;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .difficulties-container .difficulties {
@@ -70,11 +78,56 @@ body {
   font-size: 50px;
   margin-left: 39%;
   margin-right: 39%;
-  margin-top: 23px;
+  margin-top: 30px;
   text-decoration: underline solid black;
 }
 
 #myChart {
   margin-left: 50px;
   font-family: "Indie Flower", cursive;
+}
+
+.introduction img {
+  border: 1px solid black;
+  float: right;
+  overflow: hidden;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-top: 60px;
+  box-shadow: -5px 5px 5px black;
+}
+
+.introduction-paragraph p {
+  font-family: "Indie Flower", cursive;
+  float: left;
+  overflow: hidden;
+  font-size: 40px;
+  width: 30%;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 80px;
+  margin-left: 210px;
+  background-color: rgb(247, 240, 231);
+  border-radius: 20px;
+  box-shadow: -5px 5px 5px black;
+}
+
+.introduction {
+  margin-bottom: 60px;
+}
+
+.scroll-button {
+  color: black;
+  margin-left: 48.5%;
+  font-size: 80px;
+}
+
+.toggle-title {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  margin-left: 39%;
+  margin-right: 39%;
+  margin-top: 94px;
+  text-decoration: underline solid black;
 }
