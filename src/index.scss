@@ -132,3 +132,12 @@ body {
     margin-top: 94px;
     text-decoration: underline solid black;
 }
+
+.marker {
+    animation: drop .4s linear forwards .2s;
+}
+
+.marker-coordinate {
+    text-decoration: none;
+    color: blue;
+}

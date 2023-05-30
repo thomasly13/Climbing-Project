@@ -80,7 +80,11 @@ function _addMarker(map, name, location, difficulties) {
     });
     
     const detailWindow = new google.maps.InfoWindow({
-        content: `<h2 class="cool-text">${name}</h2><p> ${difficulties}</p>`
+        content: `
+        <h2 class="cool-text">${name}</h2>
+        <a class="marker-coordinate" href="http://www.google.com/maps/place/${lat},${lng}" target="_blank">${lat}, ${lng}</a>
+        <p> ${difficulties}</p>
+        `
     });
 
     marker.addListener("click", () => {
