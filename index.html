@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://kit.fontawesome.com/2687a23fd5.js" crossorigin="anonymous"></script>
+
     <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
       ({key: "AIzaSyCL1buWaa613e2kJz-1qY5HBNNZamJaWG8", v: "beta"});</script>
 
@@ -24,36 +26,38 @@
   <body>
     <div class="first-page">
       <h1 class="title">Bay Area Boulders</h1>
+      <a class="github-links" href="https://github.com/thomasly13" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a class="linkedin-links" href="https://www.linkedin.com/in/thomas-ly-88559b255" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
       <div class="introduction">
 
-        <p>Although known for it's city life, a common hobby picked up by many in the bay area, is climbing! To the right, is a photo of a popular climbing spot, just north of San Francisco, called Ring Mountain! Click the arrow below to see the graph and map of all of the bouldering problems in the bay area. Feel free to toggle by location or difficulty!</p>
-        <div class="image-carousel" data-carousel>
+        <p >Although known for it's city life, a common hobby picked up by many in the bay area, is climbing! To the right, is a photo of a popular climbing spot, just north of San Francisco, called Ring Mountain! Click the arrow below to see the graph and map of all of the bouldering problems in the bay area. Feel free to toggle by location or difficulty!</p>
 
-          <button class="forward-button" data-button="next">&#8680;</button>
-          <button class="backwards-button" data-button="prev">&#8678;</button>
 
-          <ul data-slides>
+        <button class="forward-button" data-button="next">&#8680;</button>
+        <button class="backwards-button" data-button="prev">&#8678;</button>
 
-            <li class="wrapper" data-active>
-              <img src="./src/images/17722332020_c77d47c452_o.jpg">
-            </li>
+        <ul data-slides>
 
-            <li class="wrapper">
-              <img src="./src/images/1647294322-34677668522_b3745fcfdd_k.webp"> 
-            </li>
+          <li class="wrapper" data-active>
+            <img src="./src/images/17722332020_c77d47c452_o.jpg">
+          </li>
 
-            <li class="wrapper">
-              <img src="./src/images/bouldering_in_california__5366x3577____v1222x580__.jpg"> 
-            </li>
+          <li class="wrapper">
+            <img src="./src/images/1647294322-34677668522_b3745fcfdd_k.webp"> 
+          </li>
 
-            <li class="wrapper">
-              <img src="./src/images/nickandrew__instagram_143-ig-1211127475688757384_3003812357-2__large_156e981b6f26259b953a4db2963644f7.jpg"> 
-            </li>
-    
-          </ul>
+          <li class="wrapper">
+            <img src="./src/images/bouldering_in_california__5366x3577____v1222x580__.jpg"> 
+          </li>
 
-        </div>
+          <li class="wrapper">
+            <img src="./src/images/nickandrew__instagram_143-ig-1211127475688757384_3003812357-2__large_156e981b6f26259b953a4db2963644f7.jpg"> 
+          </li>
+  
+        </ul>
+
+
 
 
       </div>

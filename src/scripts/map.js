@@ -72,7 +72,8 @@ export async function loadMap() {
         };
 
         for (const x of difficulties.entries()) {
-            //creates the description
+            //creates the description in the info window
+            //x[0] is the key, x[1] is the count
             if (x[1] === 1){
                 description += `${x[0]}: ${x[1]} Problem <br>`;
             } else {
@@ -81,13 +82,17 @@ export async function loadMap() {
             
         };
 
+        //creates the marker, along with the info window
         let marker = _addMarker(map, parks[i][0], counter.get(parks[i][0])[0], description);
 
+        //arrays to hold climbs corresponding to each group
         let north = [];
         let east= [];
         let south = [];
         let west = [];
 
+
+        //adds markers to their corresponding area
         if (parks[i][1] === 'North Bay') {
             north.push(marker);
         } else if (parks[i][1] === 'East Bay') {
@@ -98,6 +103,8 @@ export async function loadMap() {
             west.push(marker)
         };
 
+
+        //finds the corresponding buttons to control the toggle
         let northButton = document.getElementById("north-button")
         let eastButton = document.getElementById("east-button")
         let southButton = document.getElementById("south-button")
@@ -105,17 +112,19 @@ export async function loadMap() {
 
 
 
-
+        //adding the event listener to toggle markers on the map
         northButton.addEventListener("click", (e) => {
             let className = e.target.classList['value'];
  
             if (className === 'areas') {
                 for (let i = 0; i < north.length; i++) {
                     north[i].setAnimation(google.maps.Animation.DROP)
+                    //shows markers
                     north[i].setMap(map)
                 };
             } else {
                 for (let i = 0; i < north.length; i++) {
+                    //makes markers disappear
                     north[i].setMap(null)
                 };
             };
@@ -179,8 +188,11 @@ export async function loadMap() {
 
 
 function _addMarker(map, name, location, difficulties) {
+    //translates arguments to variables
     let lat = location[0];
     let lng = location[1];
+
+    //creates the marker
     let marker = new google.maps.Marker({
     position: {lat: lat, lng: lng },
     map: map,
@@ -189,6 +201,7 @@ function _addMarker(map, name, location, difficulties) {
     animation: google.maps.Animation.DROP
     });
     
+    //creates a info window
     const detailWindow = new google.maps.InfoWindow({
         content: `
         <h2 class="cool-text">${name}</h2>
@@ -197,17 +210,14 @@ function _addMarker(map, name, location, difficulties) {
         `
     });
 
+    
+    //links info window with marker
     marker.addListener("click", () => {
         detailWindow.open(map, marker)
     });
 
-    // marker.addListener("mouseover", () => {
-    //     detailWindow.open(map, marker)
-    // });
-    // marker.addListener("mouseout", () => {
-    //     detailWindow.close(map, marker)
-    // });
 
+    // returns marker for later use
     return marker
     
 };

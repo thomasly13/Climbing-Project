@@ -7,57 +7,57 @@ export function loadOriginalChart() {
         datasets: [{
             label: 'V0',
             data: [],
-            backgroundColor: ['rgba(103, 138, 202, 1)'],
+            backgroundColor: ['rgba(0, 146, 250, 0.6)'],
             borderWidth: 1          
         },{
             label: 'V1',
             data: [],
-            backgroundColor: ['rgba(191, 214, 228, 1)'],
+            backgroundColor: ['rgba(255, 208, 0, 0.6)'],
             borderWidth: 1          
         }, {
             label: 'V2',
             data: [],
-            backgroundColor: ['rgba(240, 165, 27, 1)'],
+            backgroundColor: ['rgba(11, 227, 25, 0.6)'],
             borderWidth: 1          
         }, {
             label: 'V3',
             data: [],
-            backgroundColor: ['rgba(233, 194, 121, 1)'],
+            backgroundColor: ['rgba(169, 11, 227, 0.6)'],
             borderWidth: 1          
         }, {
             label: 'V4',
             data: [],
-            backgroundColor: ['rgba(24, 131, 24, 1)'],
+            backgroundColor: ['rgba(251, 79, 13, 0.6)'],
             borderWidth: 1          
         },{
             label: 'V5',
             data: [],
-            backgroundColor: ['rgba(151, 230, 151, 1)'],
+            backgroundColor: ['rgba(142,115,250, 0.6)'],
             borderWidth: 1          
         },{
             label: 'V6',
             data: [],
-            backgroundColor: ['rgba(204, 8, 8, 1)'],
+            backgroundColor: ['rgba(0, 146, 250, 0.6)'],
             borderWidth: 1          
         }, {
             label: 'V7',
             data: [],
-            backgroundColor: ['rgba(248, 139, 139, 1)'],
+            backgroundColor: ['rgba(255, 208, 0, 0.6)'],
             borderWidth: 1          
         }, {
             label: 'V8',
             data: [],
-            backgroundColor: ['rgba(153, 77, 153, 1)'],
+            backgroundColor: ['rgba(11, 227, 25, 0.6)'],
             borderWidth: 1          
         }, {
             label: 'V9',
             data: [],
-            backgroundColor: ['rgba(223, 165, 223, 1)'],
+            backgroundColor: ['rgba(169, 11, 227, 0.6)'],
             borderWidth: 1          
         }, {
             label: 'V10',
             data: [],
-            backgroundColor: ['rgba(255, 194, 204, 1)'],
+            backgroundColor: ['rgba(251, 79, 13, 0.6)'],
             borderWidth: 1          
         }]
         

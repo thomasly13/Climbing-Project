@@ -1,3 +1,253 @@
-#map{height:53.75vh;width:28vw;border-radius:5%;border:1px solid #000;margin-left:7%;box-shadow:-5px 5px 5px #000}.cool-text{color:red}html{scroll-behavior:smooth}body{overflow:auto;display:flex;flex-direction:column;flex-wrap:wrap;background-color:#f5e6d2}.off{text-decoration:line-through}.areas-container{display:flex;flex-direction:row;justify-content:space-evenly;margin-bottom:2%;width:100%}.areas-container .areas{width:15%;font-size:1.5vw;font-family:"Indie Flower",cursive;border-radius:5%;background-color:#dce7f1}.difficulties-container{display:flex;flex-direction:row;justify-content:space-evenly;width:100%;margin-top:1.5%;margin-bottom:2%}.difficulties-container .difficulties{width:10%;font-size:1.5vw;font-family:"Indie Flower",cursive;margin-left:3%;border-radius:5%;background-color:#dce7f1}.areas:hover,.difficulties:hover{cursor:pointer;background-color:#9fc6e7}.information{display:flex;flex-wrap:wrap;flex-direction:column;align-items:center;justify-content:space-evenly;margin-top:5%;width:60%;margin-bottom:-5%}.title{font-family:"Indie Flower",cursive;font-size:2.6vw;margin-left:39%;margin-right:39%;margin-top:1.5%;text-decoration:underline solid #000}#myChart{margin-left:2.75%;width:100%;height:20%;font-family:"Indie Flower",cursive}.introduction p{font-family:"Indie Flower",cursive;overflow:hidden;font-size:2vw;height:20%;width:33.6%;border:1px solid #000;padding:1.05%;margin-left:11%;margin-right:5%;background-color:#dce7f1;border-radius:4%;box-shadow:-5px 5px 5px #000}.introduction{margin-bottom:5%;margin-top:5%;display:flex;flex-direction:row;align-items:center}.scroll-button{color:#000;margin-left:48.5%;font-size:5vw}.toggle-title{font-family:"Indie Flower",cursive;font-size:2.6vw;margin-left:39%;margin-right:39%;margin-top:6%;text-decoration:underline solid #000}.marker{animation:drop .4s linear forwards .2s}.marker-coordinate{text-decoration:none;color:blue}.second-page-information{display:flex;flex-direction:row;align-items:center;margin-left:5%}.difficulties-texts{display:flex;flex-direction:row;font-size:2.2vw;font-family:"Indie Flower",cursive;color:#000}.difficulties-easy{float:left;margin-left:-47.5%}.difficulties-text{margin-left:50%}.difficulties-hard{float:right;margin-left:50%}.second-page{height:100%}.first-page{height:100%;margin-top:2%}.wrapper{width:50%;top:20%;left:57%;position:absolute;opacity:0;transition:250ms opacity ease-in-out;transition-delay:250ms}.wrapper[data-active]{opacity:1;z-index:1;transition-delay:0ms}.wrapper img{border:1px solid #000;border-radius:4%;width:75%;box-shadow:-5px 5px 5px #000}.forward-button{background:none;font-size:300%;border:none;position:absolute;z-index:2;left:91%;color:#e0dede;cursor:pointer;background-color:rgba(0,0,0,.1)}.backwards-button{background:none;font-size:300%;border:none;position:absolute;z-index:2;left:58%;color:#e0dede;cursor:pointer;background-color:rgba(0,0,0,.1)}.forward-button:hover,.backwards-button:hover{color:#fff;background-color:rgba(0,0,0,.2);border:1px solid #000}
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+#map {
+  height: 53.75vh;
+  width: 28vw;
+  border-radius: 5%;
+  border: 1px solid black;
+  margin-left: 7%;
+  box-shadow: -5px 5px 5px black;
+}
 
-/*# sourceMappingURL=main.css.map*/
+.cool-text {
+  color: red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(245, 230, 210);
+}
+
+.off {
+  text-decoration: line-through;
+}
+
+.areas-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.areas-container .areas {
+  width: 15%;
+  font-size: 1.5vw;
+  font-family: "Indie Flower", cursive;
+  border-radius: 5%;
+  background-color: rgb(220, 231, 241);
+}
+
+.difficulties-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 1.5%;
+  margin-bottom: 2%;
+}
+
+.difficulties-container .difficulties {
+  width: 10%;
+  font-size: 1.5vw;
+  font-family: "Indie Flower", cursive;
+  margin-left: 3%;
+  border-radius: 5%;
+  background-color: rgb(220, 231, 241);
+}
+
+.areas:hover, .difficulties:hover {
+  cursor: pointer;
+  background-color: rgb(159, 198, 231);
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  width: 60%;
+  margin-bottom: -5%;
+}
+
+.title {
+  font-family: "Indie Flower", cursive;
+  font-size: 2.6vw;
+  margin-left: 39%;
+  margin-right: 39%;
+  margin-top: 1.5%;
+  text-decoration: underline solid black;
+}
+
+#myChart {
+  margin-left: 2.75%;
+  width: 100%;
+  height: 20%;
+  font-family: "Indie Flower", cursive;
+}
+
+.introduction p {
+  font-family: "Indie Flower", cursive;
+  overflow: hidden;
+  font-size: 2vw;
+  height: 20%;
+  width: 33.6%;
+  border: 1px solid black;
+  padding: 1.05%;
+  margin-left: 11%;
+  margin-right: 5%;
+  background-color: rgb(220, 231, 241);
+  border-radius: 4%;
+  box-shadow: -5px 5px 5px black;
+}
+
+.introduction {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scroll-button {
+  color: black;
+  margin-left: 48.5%;
+  font-size: 5vw;
+}
+
+.toggle-title {
+  font-family: "Indie Flower", cursive;
+  font-size: 2.6vw;
+  margin-left: 39%;
+  margin-right: 39%;
+  margin-top: 6%;
+  text-decoration: underline solid black;
+}
+
+.marker {
+  animation: drop 0.4s linear forwards 0.2s;
+}
+
+.marker-coordinate {
+  text-decoration: none;
+  color: blue;
+}
+
+.second-page-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.difficulties-texts {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.2vw;
+  font-family: "Indie Flower", cursive;
+  color: black;
+}
+
+.difficulties-easy {
+  float: left;
+  margin-left: -47.5%;
+}
+
+.difficulties-text {
+  margin-left: 50%;
+}
+
+.difficulties-hard {
+  float: right;
+  margin-left: 50%;
+}
+
+.second-page {
+  height: 100%;
+}
+
+.first-page {
+  height: 100%;
+  margin-top: 2%;
+}
+
+.wrapper {
+  width: 50%;
+  top: 20%;
+  left: 57%;
+  position: absolute;
+  opacity: 0;
+  transition: 250ms opacity ease-in-out;
+  transition-delay: 250ms;
+}
+
+.wrapper[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.wrapper img {
+  border: 1px solid black;
+  border-radius: 4%;
+  width: 75%;
+  box-shadow: -5px 5px 5px black;
+}
+
+.forward-button {
+  background: none;
+  font-size: 300%;
+  border: none;
+  position: absolute;
+  z-index: 2;
+  left: 90%;
+  color: rgb(224, 222, 222);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 42%;
+}
+
+.backwards-button {
+  background: none;
+  font-size: 300%;
+  border: none;
+  position: absolute;
+  z-index: 2;
+  top: 42%;
+  left: 58%;
+  color: rgb(224, 222, 222);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.forward-button:hover, .backwards-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+}
+
+.github-links {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  font-size: 2.5vw;
+  color: black;
+}
+
+.linkedin-links {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  font-size: 2.5vw;
+  color: rgb(41, 106, 226);
+}
