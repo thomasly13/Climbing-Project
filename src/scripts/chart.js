@@ -67,15 +67,34 @@ export function loadOriginalChart() {
         type: 'bar',
         data: data,
         options: {
+            animations: {
+                tension: {
+                  duration: 100,
+                  easing: 'easeOutExpo',
+                  from: 1,
+                  to: .5,
+                }
+            },
             indexAxis: 'y',
             scales: {
                 x: {
-                    stacked: true
+                    stacked: true,
+                    fontColor: "green",
+                    fontSize: 18,
+                    stepSize: 1,
+                    beginAtZero: true
                 },
                 y: {
-                    stacked: true
+                    stacked: true,
+                    fontColor: "green",
+                    fontSize: 18,
+                    stepSize: 1,
+                    beginAtZero: true
                 }
+
+                
             }
+
         }
     };
 

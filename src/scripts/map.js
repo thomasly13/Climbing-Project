@@ -197,7 +197,9 @@ function _addMarker(map, name, location, difficulties) {
     position: {lat: lat, lng: lng },
     map: map,
     title: `${name}`,
-    icon:'https://img.icons8.com/?size=50&id=58mu148U0fsj&format=png',
+    icon:'https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/40/external-rock-desert-icongeek26-linear-colour-icongeek26.png',
+    // pet rock icon
+    // https://img.icons8.com/?size=50&id=58mu148U0fsj&format=png
     animation: google.maps.Animation.DROP
     });
     

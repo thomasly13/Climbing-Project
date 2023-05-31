@@ -395,6 +395,76 @@ export function createSeeds() {
     const climb343 = new BoulderSpots(343, 'Indian Rock', 'East Bay', 'V1', [37.892153, -122.272720], 'Indian Rock');
     const climb344 = new BoulderSpots(344, 'Indian Rock', 'East Bay', 'V1', [37.892153, -122.272720], 'Indian Rock');
 
+    const climb345 = new BoulderSpots(345, 'Sunnyvale Mountain', 'South Bay', 'V1', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb346 = new BoulderSpots(346, 'Sunnyvale Mountain', 'South Bay', 'V2', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb347 = new BoulderSpots(347, 'Sunnyvale Mountain', 'South Bay', 'V2', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb348 = new BoulderSpots(348, 'Sunnyvale Mountain', 'South Bay', 'V2', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb349 = new BoulderSpots(349, 'Sunnyvale Mountain', 'South Bay', 'V4', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb350 = new BoulderSpots(350, 'Sunnyvale Mountain', 'South Bay', 'V5', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb351 = new BoulderSpots(351, 'Sunnyvale Mountain', 'South Bay', 'V1', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb352 = new BoulderSpots(352, 'Sunnyvale Mountain', 'South Bay', 'V2', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb353 = new BoulderSpots(353, 'Sunnyvale Mountain', 'South Bay', 'V3', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb354 = new BoulderSpots(354, 'Sunnyvale Mountain', 'South Bay', 'V5', [37.219455, -122.068861], 'Sunnyvale Mountain');
+
+    const climb355 = new BoulderSpots(355, 'Sunnyvale Mountain', 'South Bay', 'V5', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb356 = new BoulderSpots(356, 'Sunnyvale Mountain', 'South Bay', 'V6', [37.219455, -122.068861], 'Sunnyvale Mountain');
+
+    const climb357 = new BoulderSpots(357, 'Sunnyvale Mountain', 'South Bay', 'V8', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb358 = new BoulderSpots(358, 'Sunnyvale Mountain', 'South Bay', 'V1', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb359 = new BoulderSpots(359, 'Sunnyvale Mountain', 'South Bay', 'V2', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb360 = new BoulderSpots(360, 'Sunnyvale Mountain', 'South Bay', 'V3', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb361 = new BoulderSpots(361, 'Sunnyvale Mountain', 'South Bay', 'V3', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb362 = new BoulderSpots(362, 'Sunnyvale Mountain', 'South Bay', 'V3', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb363 = new BoulderSpots(363, 'Sunnyvale Mountain', 'South Bay', 'V3', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb364 = new BoulderSpots(364, 'Sunnyvale Mountain', 'South Bay', 'V4', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb365 = new BoulderSpots(365, 'Sunnyvale Mountain', 'South Bay', 'V5', [37.219455, -122.068861], 'Sunnyvale Mountain');
+    const climb366 = new BoulderSpots(366, 'Sunnyvale Mountain', 'South Bay', 'V7', [37.219455, -122.068861], 'Sunnyvale Mountain');
+
+    const climb367 = new BoulderSpots(367, 'Homestead Boulders', 'South Bay', 'V1', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb368 = new BoulderSpots(368, 'Homestead Boulders', 'South Bay', 'V1', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb369 = new BoulderSpots(369, 'Homestead Boulders', 'South Bay', 'V2', [37.271364, -122.140787], 'Homestead Boulders');
+
+    const climb370 = new BoulderSpots(370, 'Homestead Boulders', 'South Bay', 'V2', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb371 = new BoulderSpots(371, 'Homestead Boulders', 'South Bay', 'V3', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb372 = new BoulderSpots(372, 'Homestead Boulders', 'South Bay', 'V4', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb373 = new BoulderSpots(373, 'Homestead Boulders', 'South Bay', 'V4', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb374 = new BoulderSpots(374, 'Homestead Boulders', 'South Bay', 'V0', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb375 = new BoulderSpots(375, 'Homestead Boulders', 'South Bay', 'V0', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb376 = new BoulderSpots(376, 'Homestead Boulders', 'South Bay', 'V1', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb377 = new BoulderSpots(377, 'Homestead Boulders', 'South Bay', 'V1', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb378 = new BoulderSpots(378, 'Homestead Boulders', 'South Bay', 'V1', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb379 = new BoulderSpots(379, 'Homestead Boulders', 'South Bay', 'V1', [37.271364, -122.140787], 'Homestead Boulders');
+
+    const climb380 = new BoulderSpots(380, 'Homestead Boulders', 'South Bay', 'V2', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb381 = new BoulderSpots(381, 'Homestead Boulders', 'South Bay', 'V2', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb382 = new BoulderSpots(382, 'Homestead Boulders', 'South Bay', 'V4', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb383 = new BoulderSpots(383, 'Homestead Boulders', 'South Bay', 'V6', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb384 = new BoulderSpots(384, 'Homestead Boulders', 'South Bay', 'V1', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb385 = new BoulderSpots(385, 'Homestead Boulders', 'South Bay', 'V2', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb386 = new BoulderSpots(386, 'Homestead Boulders', 'South Bay', 'V4', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb387 = new BoulderSpots(387, 'Homestead Boulders', 'South Bay', 'V4', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb388 = new BoulderSpots(388, 'Homestead Boulders', 'South Bay', 'V4', [37.271364, -122.140787], 'Homestead Boulders');
+    const climb389 = new BoulderSpots(389, 'Homestead Boulders', 'South Bay', 'V6', [37.271364, -122.140787], 'Homestead Boulders');
+
+    const climb390 = new BoulderSpots(390, 'Aquarian Valley', 'South Bay', 'V1', [37.289856, -122.155326], 'Aquarian Valley');
+    const climb391 = new BoulderSpots(391, 'Aquarian Valley', 'South Bay', 'V3', [37.289856, -122.155326], 'Aquarian Valley');
+    const climb392 = new BoulderSpots(392, 'Aquarian Valley', 'South Bay', 'V5', [37.289856, -122.155326], 'Aquarian Valley');
+    const climb393 = new BoulderSpots(393, 'Aquarian Valley', 'South Bay', 'V7', [37.289856, -122.155326], 'Aquarian Valley');
+    const climb394 = new BoulderSpots(394, 'Aquarian Valley', 'South Bay', 'V10', [37.289856, -122.155326], 'Aquarian Valley');
+    const climb395 = new BoulderSpots(395, 'Aquarian Valley', 'South Bay', 'V10', [37.289856, -122.155326], 'Aquarian Valley');
+    const climb396 = new BoulderSpots(396, 'Aquarian Valley', 'South Bay', 'V10', [37.289856, -122.155326], 'Aquarian Valley');
+
+    const climb397 = new BoulderSpots(397, 'Guadelupe Rock', 'South Bay', 'V3', [37.186333, -121.871972], 'Guadelupe Rock');
+    const climb398 = new BoulderSpots(398, 'Farm Hill Boulder', 'South Bay', 'V5', [37.453661, -122.258265], 'Farm Hill Boulder');
+    const climb399 = new BoulderSpots(399, 'Farm Hill Boulder', 'South Bay', 'V7', [37.453661, -122.258265], 'Farm Hill Boulder');
+    const climb400 = new BoulderSpots(400, 'Farm Hill Boulder', 'South Bay', 'V10', [37.453661, -122.258265], 'Farm Hill Boulder');
+    const climb401 = new BoulderSpots(401, 'Handel Rock Park', 'South Bay', 'V10', [37.465799, -122.269494], 'Handel Rock Park');
+    const climb402 = new BoulderSpots(402, 'Handel Rock Park', 'South Bay', 'V10', [37.465799, -122.269494], 'Handel Rock Park');
+
+
+
+
+
 
 
 
