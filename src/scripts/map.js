@@ -103,6 +103,8 @@ export async function loadMap() {
                     markers[i].setIcon("https://img.icons8.com/?size=50&id=58mu148U0fsj&format=png");
                     markers[i].setAnimation(google.maps.Animation.DROP);
                     markers[i].setMap(map);
+                    setTimeout( () => {markers[i].setAnimation(google.maps.Animation.BOUNCE)}, 500)
+                    ;
                 } else {
                     markers[i].setMap(null);
                     markers[i].setIcon("https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/40/external-rock-desert-icongeek26-linear-colour-icongeek26.png");
