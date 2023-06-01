@@ -79,17 +79,10 @@ export function loadOriginalChart() {
             scales: {
                 x: {
                     stacked: true,
-                    fontColor: "green",
-                    fontSize: 18,
-                    stepSize: 1,
-                    beginAtZero: true
+
                 },
                 y: {
                     stacked: true,
-                    fontColor: "green",
-                    fontSize: 18,
-                    stepSize: 1,
-                    beginAtZero: true
                 }
 
                 

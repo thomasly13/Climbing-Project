@@ -454,12 +454,12 @@ export function createSeeds() {
     const climb395 = new BoulderSpots(395, 'Aquarian Valley', 'South Bay', 'V10', [37.289856, -122.155326], 'Aquarian Valley');
     const climb396 = new BoulderSpots(396, 'Aquarian Valley', 'South Bay', 'V10', [37.289856, -122.155326], 'Aquarian Valley');
 
-    const climb397 = new BoulderSpots(397, 'Guadelupe Rock', 'South Bay', 'V3', [37.186333, -121.871972], 'Guadelupe Rock');
-    const climb398 = new BoulderSpots(398, 'Farm Hill Boulder', 'South Bay', 'V5', [37.453661, -122.258265], 'Farm Hill Boulder');
-    const climb399 = new BoulderSpots(399, 'Farm Hill Boulder', 'South Bay', 'V7', [37.453661, -122.258265], 'Farm Hill Boulder');
-    const climb400 = new BoulderSpots(400, 'Farm Hill Boulder', 'South Bay', 'V10', [37.453661, -122.258265], 'Farm Hill Boulder');
-    const climb401 = new BoulderSpots(401, 'Handel Rock Park', 'South Bay', 'V10', [37.465799, -122.269494], 'Handel Rock Park');
-    const climb402 = new BoulderSpots(402, 'Handel Rock Park', 'South Bay', 'V10', [37.465799, -122.269494], 'Handel Rock Park');
+    const climb397 = new BoulderSpots(397, 'Guadelupe Rock', 'South Bay', 'V4', [37.186333, -121.871972], 'Guadelupe Rock');
+    const climb398 = new BoulderSpots(398, 'Farm Hill Boulder', 'South Bay', 'V1', [37.453661, -122.258265], 'Farm Hill Boulder');
+    const climb399 = new BoulderSpots(399, 'Farm Hill Boulder', 'South Bay', 'V2', [37.453661, -122.258265], 'Farm Hill Boulder');
+    const climb400 = new BoulderSpots(400, 'Farm Hill Boulder', 'South Bay', 'V4', [37.453661, -122.258265], 'Farm Hill Boulder');
+    const climb401 = new BoulderSpots(401, 'Handel Rock Park', 'South Bay', 'V3', [37.465799, -122.269494], 'Handel Rock Park');
+    const climb402 = new BoulderSpots(402, 'Handel Rock Park', 'South Bay', 'V4', [37.465799, -122.269494], 'Handel Rock Park');
 
 
 
