@@ -8,9 +8,10 @@ import { animateSlider } from "./scripts/coolEventListeners";
 
 window.BoulderSpots = BoulderSpots;
 
+
 document.addEventListener("DOMContentLoaded", () => {
-  createSeeds();
   loadMap(); 
+  createSeeds();
   toggle();
   loadOriginalChart();
   animateSlider();

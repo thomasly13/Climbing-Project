@@ -1,14 +1,15 @@
 import BoulderSpots from "../scripts/bouldering";
 
+
 export async function loadMap() {
 
     //create map variable
     let map;    
 
-
     //create and initilize the map
     async function initMap() {
 
+    
         //importing google api
         const { Map } = await google.maps.importLibrary("maps");
 

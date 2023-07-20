@@ -1,23 +1,24 @@
-Background:
-This is a informative bay area bouldering appplication. It will contain various bouldering problems from the the different areas of the bay. I will be splitting the bay in North, South, West, East, along with listing parks at which these problems can be found. It has a interactive bar graph, with toggle settings, which includes difficulty and bay area location. Users can toggle these settings to to show relevant information about the parks on the bar graph along with the location of these problems on the map. The map will have markers which users can click on to see the type of climbs there. 
+### BoulderUp
 
-Functionality: 
-In bouldering_project, users will be able to: 
-Easily find what areas of have the problem difficulty they desire.
-Easily find what problems are in the area around them.
-Be able to locate the climb on the map.
-Be able to use the map for directions to the climb.
+[Go to the website](https://thomasly13.github.io/Climbing-Project/)
 
-![Screenshot].(Screenshot 2023-05-25 152727.jpg)
+### Background
+This is a informative bay area bouldering appplication. It contains various bouldering problems from the different areas of the bay. The bay is split in North, South, West, East, along with listing parks at which these problems can be found. It has a interactive bar graph, with toggle settings, which includes difficulty and bay area location. Users can toggle these settings to to show relevant information about the parks on the bar graph along with the location of these problems on the map. The map will have markers which users can click on to see the type of climbs there. 
 
-Technologies:
-Google Maps Api
-Canvas Api 
+https://github.com/thomasly13/Climbing-Project
 
+## Functionality 
+* Search what areas have the problem difficulty the User desires.
+* Users can search by area and find problems near them
+* Can use the coordinates and google Maps links as directions to the climb.
 
-Implementation Timeline:
-Friday Afternoon & Weekend: Finishing the map and it's markers, along with all of the data seeded.
-Monday: finish the bar graph technology
-Tuesday: have a finished prototype
-Wednesday: Do finishing touches
-Thursday Morning: should be done
+## Technologies
+This project is implemented with the following technologies:
+* Vanilla Javascript
+* ```Google Maps API``` to display a map 
+* ```Canvas API``` to display a bar graph
+* ``` Webpage ``` and ``` Babel``` to bundle and deploy the Javascript code.
+
+## Bonus Feateures 
+
+* Create individual climbs show pages.
